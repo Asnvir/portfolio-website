@@ -13,6 +13,7 @@ export default async function downloadFile() {
     const base64String = Buffer.from(arrayBuffer).toString('base64');
 
     return { fileName, data: base64String };
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
     throw new Error(`Error downloading file`);
   }

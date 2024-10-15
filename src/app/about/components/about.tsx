@@ -1,6 +1,7 @@
 import Image from 'next/image';
 
-import Achievements from './achievements';
+import Achievemnts from './achievemnts';
+import Skills from './skills';
 import Education from './education';
 import Experience from './experience';
 import PersonalInfo from './personal-info';
@@ -18,18 +19,18 @@ export default function About() {
             </h1>
             <span className="title-bg">Resume</span>
           </div>
-          <section className="main-content ">
+          <section className="main-content">
             <div className="container">
+              {/* [Personal Info & Achievements] & Skills Starts */}
               <div className="row">
-                {/* Personal Info Starts */}
-
-                <div className="col-xl-6 col-lg-5 col-12">
-                  <div className="row">
+                {/* Personal Info & Achievements Starts */}
+                <div className="col-lg-6 col-md-12">
+                  {/* Personal Info Starts */}
+                  <div className="personal-info-section " style={{ marginBottom: '5rem' }}>
                     <div className="col-12">
                       <h3 className="text-uppercase text-center custom-title mb-0 ft-wt-600">personal infos</h3>
                     </div>
-                    {/* End .col */}
-
+                    {/* Image for mobile view */}
                     <div className="col-12 d-block d-sm-none">
                       <Image
                         src={heroImgMobile}
@@ -41,45 +42,57 @@ export default function About() {
                         alt="about avatar"
                       />
                     </div>
-                    {/* image for mobile menu */}
-
+                    {/* Personal info */}
                     <div className="col-12">
                       <PersonalInfo />
                     </div>
-                    {/* End personal info */}
                   </div>
-                </div>
-                {/*  Personal Info Ends */}
+                  {/* Personal Info Ends */}
 
-                {/*  Boxes Starts */}
-                <div className="col-xl-6 col-lg-7 col-12 mt-5 mt-lg-0">
-                  <Achievements />
+                  {/* Achievemnts Starts */}
+                  <div className="personal-info-section">
+                    <div className="col-12">
+                      <h3 className="text-uppercase text-center custom-title mb-0 ft-wt-600">Achievements</h3>
+                    </div>
+                    <div className="col-12">
+                      <Achievemnts />
+
+                      {/*<PersonalInfo />*/}
+                    </div>
+                  </div>
+                  {/* Achievemnts Ends */}
                 </div>
-                {/* Achievements Ends */}
+                {/* Personal Info & Achievements ends */}
+
+                {/* Skills Starts */}
+                <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
+                  <Skills />
+                </div>
+                {/* Skills Ends */}
               </div>
-              {/* End .row */}
+              {/* [Personal Info & Achievements] & Skills Ends */}
 
               <hr className="separator" />
 
-              {/* Experience & Education Starts */}
+              {/* Experience & Projects & Education Starts */}
               <div className="row">
-                <div className="col-lg-4 m-15px-tb">
+                <div className="col-lg-4 col-md-6 m-15px-tb">
                   <div className="resume-box">
                     <Experience />
                   </div>
                 </div>
-                <div className="col-lg-4 m-15px-tb">
+                <div className="col-lg-4 col-md-6 m-15px-tb">
                   <div className="resume-box">
                     <Projects />
                   </div>
                 </div>
-                <div className="col-lg-4 m-15px-tb">
+                <div className="col-lg-4 col-md-12 m-15px-tb">
                   <div className="resume-box">
                     <Education />
                   </div>
                 </div>
               </div>
-              {/*  Experience & Education Ends */}
+              {/* Experience & Projects & Education Ends */}
             </div>
           </section>
         </div>

@@ -36,6 +36,7 @@ export default function DownloadButton() {
 
       document.body.append(link);
       link.click();
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       const errorMessage = `An error occurred while downloading the file.`;
       toast.error(errorMessage);

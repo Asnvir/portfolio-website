@@ -8,7 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint \"src/**\"",
-    "lint:fix": "eslint src/** --fix"
+    "lint:fix": "eslint src/** --fix",
+    "docker:build": "node -r dotenv/config build-docker.js",
+    "docker:run": "docker run -p 3000:3000 --env-file .env.local nextjs-image"
   },
   "browserslist": {
     "production": [

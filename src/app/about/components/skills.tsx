@@ -1,4 +1,4 @@
-export default function Achievements() {
+export default function Skills() {
   const achievementsContent = [
     { title: `Java`, subTitle1: 'MySQL', subTitle2: 'MongoDB' },
     { title: 'Spring Boot', subTitle1: 'Spring Data JPA', subTitle2: 'Spring Security' },

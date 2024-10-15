@@ -13,9 +13,6 @@ import Toast from '@shared/toast';
 export const metadata: Metadata = {
   title: 'Artur K. - Portfolio Website',
   description: 'Portfolio website',
-  icons: {
-    icon: 'facicon.ico',
-  },
 };
 
 const poppins = Poppins({
