@@ -13,5 +13,3 @@ export function PreloadResources() {
 
   return null;
 }
-
-// Waiting for a fix -> https://github.com/vercel/next.js/issues/47399
