@@ -5,6 +5,7 @@ import sgMail, { MailDataRequired } from '@sendgrid/mail';
 import { ContactForm } from '@types';
 
 sgMail.setApiKey(`${process.env.SENDGRID_API_KEY}`);
+console.log(`setApiKey: ${process.env.SENDGRID_API_KEY}`);
 
 export async function handleSubmitAction(contactForm: ContactForm, token: string) {
   const email: MailDataRequired = {
