@@ -29,7 +29,7 @@ export async function handleSubmitAction(contactForm: ContactForm, token: string
   try {
     await sgMail.send(email);
   } catch (error) {
-    console.error('Error sending the email: ' + error.message);
+    console.error(JSON.stringify(error));
   }
 }
 
