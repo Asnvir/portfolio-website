@@ -34,6 +34,7 @@ export default function Contact() {
       setIsSubmitting(true);
 
       const token = await executeRecaptcha('form_submit');
+      console.log(`token: ${token}`);
 
       await handleSubmitAction(formData, token);
 

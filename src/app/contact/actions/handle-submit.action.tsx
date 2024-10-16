@@ -25,20 +25,7 @@ export async function handleSubmitAction(contactForm: ContactForm, token: string
     throw new Error('reCAPTCHA verification failed.');
   }
 
-  try {
-    const response = await sgMail.send(email);
-    console.log(`response`);
-    console.log(response);
-  } catch (error) {
-    // Check if errors array exists in the response body
-    if (error.response.data.errors && Array.isArray(error.response.data.errors)) {
-      // Log each error message from the errors array
-      error.response.data.errors.forEach((errorItem, index) => {
-        console.log(`Error ${index + 1}:`, errorItem);
-      });
-    } else {
-      console.log('No specific errors found in the response body.');
-    }
+  await sgMail.send(email);
 }
 
 async function verifyRecaptcha(token: string): Promise<boolean> {
