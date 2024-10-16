@@ -1,12 +1,33 @@
 {
   "name": "portfolio-website",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint \"src/**\"",
+    "lint:fix": "eslint src/** --fix",
+    "docker:build": "node -r dotenv/config build-docker.js",
+    "docker:run": "docker run -p 3000:3000 --env-file .env.local nextjs-image"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "pnpm": {
+    "overrides": {
+      "nth-check@<2.0.1": ">=2.0.1"
+    }
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
@@ -23,7 +44,8 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-toastify": "^10.0.6",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.13"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.2.15",
@@ -32,14 +54,13 @@
     "@testing-library/user-event": "^14.5.2",
     "@types/aos": "^3.0.7",
     "@types/jest": "^29.5.13",
-    "@types/node": "^20.16.11",
+    "@types/node": "^22.7.5",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
     "@typescript-eslint/eslint-plugin": "^8.8.1",
     "@typescript-eslint/parser": "^8.8.1",
     "dotenv": "^16.4.5",
-    "eslint": "^8.57.1",
-    "eslint-config-next": "14.2.15",
+    "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-custom-alias": "^1.3.2",
     "eslint-import-resolver-typescript": "^3.6.3",
@@ -47,10 +68,8 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.37.1",
     "eslint-plugin-react-hooks": "^5.0.0",
-    "postcss": "^8",
     "prettier": "^3.3.3",
     "sass": "^1.79.5",
-    "tailwindcss": "^3.4.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
   }

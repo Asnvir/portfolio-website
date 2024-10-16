@@ -1,0 +1,5 @@
+src/assets/*
+src/styles/*
+styles.scss
+*.ico
+**/*.css
