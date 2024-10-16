@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const SocialShare = [
   {
     icon: <FontAwesomeIcon icon={faLinkedinIn} />,
-    link: 'https://www.linkedin.com/in/artur-kopytin//',
+    link: 'https://www.linkedin.com/in/artur-kopytin/',
   },
   {
     icon: <FontAwesomeIcon icon={faGithub} />,

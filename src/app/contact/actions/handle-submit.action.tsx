@@ -19,6 +19,7 @@ export async function handleSubmitAction(contactForm: ContactForm, token: string
   };
 
   const isRecaptchaVerified = await verifyRecaptcha(token);
+  console.log(`isRecaptchaVerified: ${isRecaptchaVerified}`);
 
   if (!isRecaptchaVerified) {
     throw new Error('reCAPTCHA verification failed.');
