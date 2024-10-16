@@ -30,8 +30,23 @@ export async function handleSubmitAction(contactForm: ContactForm, token: string
     console.log(`response`);
     console.log(response);
   } catch (error) {
-    console.log(`error await sgMail.send(email);`);
-    console.log(error);
+    // Check if the error has a response
+    if (error.response) {
+      console.log('Error Status:', error.response.status);
+
+      // Check if the response body has the errors array
+      if (error.response.data && error.response.data.errors) {
+        // Log each error in the errors array
+        error.response.data.errors.forEach((errorItem) => {
+          console.log('Error:', errorItem);
+        });
+      } else {
+        // If no specific errors are available, log the entire response
+        console.log('Error Data:', error.response.data);
+      }
+    } else {
+      console.log('Error:', error.message);
+    }
   }
 }
 
