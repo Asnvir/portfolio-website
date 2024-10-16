@@ -5,7 +5,6 @@ import sgMail, { MailDataRequired } from '@sendgrid/mail';
 import { ContactForm } from '@types';
 
 sgMail.setApiKey(`${process.env.SENDGRID_API_KEY}`);
-console.log(`setApiKey: ${process.env.SENDGRID_API_KEY}`);
 
 export async function handleSubmitAction(contactForm: ContactForm, token: string) {
   const email: MailDataRequired = {
@@ -20,19 +19,12 @@ export async function handleSubmitAction(contactForm: ContactForm, token: string
   };
 
   const isRecaptchaVerified = await verifyRecaptcha(token);
-  console.log(`isRecaptchaVerified: ${isRecaptchaVerified}`);
 
   if (!isRecaptchaVerified) {
     throw new Error('reCAPTCHA verification failed.');
   }
 
-  console.log(`emai: ${JSON.stringify(email)}`);
-
-  try {
-    await sgMail.send(email);
-  } catch (error) {
-    console.error(JSON.stringify(error));
-  }
+  await sgMail.send(email);
 }
 
 async function verifyRecaptcha(token: string): Promise<boolean> {

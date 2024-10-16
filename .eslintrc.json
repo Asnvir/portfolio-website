@@ -49,7 +49,7 @@
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
         "react/prop-types": "off",
-        "no-console": ["off"],
+        "no-console": ["error"],
         "@typescript-eslint/no-shadow": ["error"],
         "no-unused-vars": [
           "error",
