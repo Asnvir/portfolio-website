@@ -30,24 +30,15 @@ export async function handleSubmitAction(contactForm: ContactForm, token: string
     console.log(`response`);
     console.log(response);
   } catch (error) {
-    // Check if the error has a response
-    if (error.response) {
-      console.log('Error Status:', error.response.status);
-
-      // Check if the response body has the errors array
-      if (error.response.data && error.response.data.errors) {
-        // Log each error in the errors array
-        error.response.data.errors.forEach((errorItem) => {
-          console.log('Error:', errorItem);
-        });
-      } else {
-        // If no specific errors are available, log the entire response
-        console.log('Error Data:', error.response.data);
-      }
+    // Check if errors array exists in the response body
+    if (error.response.data.errors && Array.isArray(error.response.data.errors)) {
+      // Log each error message from the errors array
+      error.response.data.errors.forEach((errorItem, index) => {
+        console.log(`Error ${index + 1}:`, errorItem);
+      });
     } else {
-      console.log('Error:', error.message);
+      console.log('No specific errors found in the response body.');
     }
-  }
 }
 
 async function verifyRecaptcha(token: string): Promise<boolean> {
