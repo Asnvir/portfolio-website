@@ -26,6 +26,8 @@ export async function handleSubmitAction(contactForm: ContactForm, token: string
     throw new Error('reCAPTCHA verification failed.');
   }
 
+  console.log(`emai: ${JSON.stringify(email)}`);
+
   try {
     await sgMail.send(email);
   } catch (error) {
