@@ -9,7 +9,7 @@ export default function Hero() {
     <>
       <div className="home react-tabs__tab-panel--selected h-100">
         <div className="d-sm-none position-relative">
-          <div className="position-absolute w-100 mt-4 top-0 start-50 translate-middle-x">
+          <div className="position-absolute w-100 mt-4 top-0 start-50 translate-middle-x z-1">
             <div data-aos="fade-up" data-aos-duration="1200">
               <SocialLinks />
             </div>

@@ -11,7 +11,7 @@ import AnimatedOnScroll from '@shared/animated-on-scroll';
 import Toast from '@shared/toast';
 
 export const metadata: Metadata = {
-  title: 'Artur K. - Portfolio Website',
+  title: 'Asnvir - Portfolio Website',
   description: 'Portfolio website',
 };
 
