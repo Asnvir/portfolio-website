@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import parse from 'html-react-parser';
 
 const educationContent = [
@@ -25,7 +25,7 @@ export default function Education() {
         {educationContent.map((val, i) => (
           <li key={i}>
             <div className="icon">
-              <FontAwesomeIcon icon={faBriefcase} className="fa" />
+              <FontAwesomeIcon icon={faGraduationCap} className="fa" />
             </div>
             <span className="time open-sans-font text-uppercase">{val.year}</span>
             <h5 className="poppins-font text-uppercase">

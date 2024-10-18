@@ -50,7 +50,8 @@
         "react-hooks/exhaustive-deps": "warn",
         "react/prop-types": "off",
         "no-console": ["error"],
-        "@typescript-eslint/no-shadow": ["error"],
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": "error",
         "no-unused-vars": [
           "error",
           {
