@@ -3,7 +3,7 @@ const personalInfoContent = [
   { meta: 'Last name', metaInfo: 'Kopytin' },
   { meta: 'Location', metaInfo: 'Tel Aviv, Israel' },
   { meta: 'Email', metaInfo: 'artur.kop97@gmail.com' },
-  { meta: 'Langages', metaInfo: 'Hebrew, English, Russian, Ukrainian' },
+  { meta: 'Languages', metaInfo: 'Hebrew, English, Russian, Ukrainian' },
 ];
 
 export default function PersonalInfo() {
