@@ -22,6 +22,9 @@ export default async function downloadFile() {
 
     return { fileName, data: base64String };
   } catch (error) {
-    throw new Error(`Error downloading file: ${error.message}`);
+    if (error instanceof Error) {
+      throw new Error(`Error downloading file: ${error.message}`);
+    }
+    throw new Error(`Unknow error while downloading the file`);
   }
 }
