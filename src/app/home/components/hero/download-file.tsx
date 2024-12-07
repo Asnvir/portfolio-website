@@ -2,19 +2,26 @@
 
 export default async function downloadFile() {
   const fileName = 'CV_Software_Engineer_Artur_Kopytin.pdf';
-  const fileId = process.env.GOOGLE_DRIVE_RESUME_FILE_ID;
-  const fileUrl = `https://drive.google.com/u/1/uc?id=${fileId}&export=download`;
+
+  const githubUsername = process.env.GITHUB_USERNAME;
+  const githubRepo = process.env.GITHUB_REPO;
+  const githubBranch = process.env.GITHUB_BRANCH;
+  const githubFilePath = process.env.GITHUB_FILE_PATH;
+
+  const fileUrl = `https://raw.githubusercontent.com/${githubUsername}/${githubRepo}/${githubBranch}/${githubFilePath}`;
 
   try {
     const response = await fetch(fileUrl);
 
-    const arrayBuffer = await response.arrayBuffer();
+    if (!response.ok) {
+      throw new Error(`Failed to download file, status: ${response.status}`);
+    }
 
+    const arrayBuffer = await response.arrayBuffer();
     const base64String = Buffer.from(arrayBuffer).toString('base64');
 
     return { fileName, data: base64String };
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
-    throw new Error(`Error downloading file`);
+    throw new Error(`Error downloading file: ${error.message}`);
   }
 }
