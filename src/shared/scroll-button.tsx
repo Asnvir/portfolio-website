@@ -15,10 +15,11 @@ export const ScrollButton = ({ targetId }: ScrollButtonProps) => {
     if (!targetElement) {
       return;
     }
-    window.scrollBy({
-      top: targetElement.getBoundingClientRect().top - window.pageYOffset,
-      left: 0,
+
+    // Use scrollIntoView for better mobile compatibility
+    targetElement.scrollIntoView({
       behavior: 'smooth',
+      block: 'start',
     });
   };
 
