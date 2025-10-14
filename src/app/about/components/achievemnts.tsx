@@ -1,9 +1,7 @@
 export default function Achievements() {
   return (
     <div className="box-stats with-margin">
-      <h4 className="poppins-font text-center mb-2 ft-wt-600">
-        Military Recognition as a Volunteer Soldier
-      </h4>
+      <h4 className="poppins-font text-center mb-2 ft-wt-600">Military Recognition as a Volunteer Soldier</h4>
       <h5 className="open-sans-font text-center mb-3 ft-wt-400" style={{ opacity: 0.8, fontSize: '14px' }}>
         (Hebrew - מצטיין אלוף)
       </h5>
