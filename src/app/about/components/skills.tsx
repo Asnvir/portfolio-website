@@ -1,26 +1,38 @@
 export default function Skills() {
-  const achievementsContent = [
-    { title: `Java`, subTitle1: 'MySQL', subTitle2: 'MongoDB' },
-    { title: 'Spring Boot', subTitle1: 'Spring Data JPA', subTitle2: 'Spring Security' },
-    { title: 'Type Script', subTitle1: 'JavaScript', subTitle2: '' },
-    { title: 'React', subTitle1: 'Redux', subTitle2: 'TanStack Query' },
-    { title: 'NextJS', subTitle1: '', subTitle2: '' },
+  const skillsContent = [
+    {
+      category: 'Frontend',
+      skills: ['TypeScript', 'Angular', 'Next.js', 'React.js', 'Tailwind CSS', 'Material UI', 'HTML', 'CSS']
+    },
+    {
+      category: 'Backend',
+      skills: ['Java', 'Spring', 'Hibernate', 'JUnit']
+    },
+    {
+      category: 'Database',
+      skills: ['MySQL', 'PostgreSQL', 'Redis', 'MongoDB', 'Firebase']
+    }
   ];
 
   return (
-    <div className="row">
-      {achievementsContent.map((val, i) => (
-        <div className="col-6" key={i}>
-          <div className="box-stats with-margin">
-            <h3 className="poppins-font position-relative">{val.title}</h3>
-            {val.subTitle1 ? (
-              <p className="open-sans-font m-0 position-relative text-uppercase">
-                {val.subTitle1} <span className="d-block">{val.subTitle2}</span>
-              </p>
-            ) : null}
+    <>
+      <h3 className="text-uppercase pb-5 mb-0 text-center custom-title ft-wt-600">Skills</h3>
+      <div className="row">
+        {skillsContent.map((val, i) => (
+          <div className="col-12" key={i}>
+            <div className="box-stats with-margin">
+              <h3 className="poppins-font position-relative">{val.category}</h3>
+              <div className="skills-list open-sans-font">
+                {val.skills.map((skill, index) => (
+                  <span key={index} className="skill-tag">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 }

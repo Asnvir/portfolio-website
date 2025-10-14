@@ -7,7 +7,7 @@ export default function Address() {
       <address>
         <p className="open-sans-font custom-span-contact position-relative">
           <FontAwesomeIcon icon={faMap} className="position-absolute" />
-          <span className="d-block">Location</span>Tel Aviv, Israel
+          <span className="d-block">Location</span>Netanya, Israel
         </p>
         {/* End .custom-span-contact */}
 

@@ -455,6 +455,24 @@ button {
   padding-bottom: 20px;
 }
 
+/* About Grid Layout */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+
+  @media (max-width: 991px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.about-grid-column {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Personal Info List */
 
 .about .about-list {
@@ -506,6 +524,51 @@ button {
   width: 30px;
   height: 1px;
   background: #777;
+}
+
+/* Achievement Link Styling */
+.achievement-link {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: rgba(0, 140, 159, 0.1);
+  border: 1px solid var(--main-primary-color);
+  border-radius: 20px;
+  color: var(--main-primary-color);
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.achievement-link:hover {
+  background-color: var(--main-primary-color);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Skills Tags */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  font-size: 13px;
+  color: #eee;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background-color: var(--main-primary-color);
+  border-color: var(--main-primary-color);
+  color: #fff;
+  transform: translateY(-2px);
 }
 
 /* Resume */
@@ -585,6 +648,33 @@ button {
   left: 7px;
   top: 9px;
   opacity: 0.8;
+}
+
+/* Experience Details Bullets */
+.about .resume-box .experience-details {
+  margin-top: 10px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.about .resume-box .experience-details li {
+  position: relative;
+  padding: 0 0 0 20px;
+  margin: 0 0 8px 0;
+  line-height: 1.6;
+}
+
+.about .resume-box .experience-details li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--main-primary-color); /* Uses your cyan color */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.about .resume-box .experience-details li::after {
+  display: none; /* Remove the timeline line */
 }
 
 /*** Contact ***/

@@ -22,56 +22,70 @@ export default function About() {
           </div>
           <section className="main-content">
             <div className="container">
-              {/* [Personal Info & Achievements] & Skills starts */}
-              <div className="row mb-4">
-                {/* Personal Info & Achievements starts */}
-                <div className="col-lg-6 col-md-12">
-                  {/* Personal Info starts */}
-                  <div className="personal-info-section " style={{ marginBottom: '5rem' }}>
-                    <div className="col-12">
-                      <h3 className="text-uppercase text-center custom-title mb-0 ft-wt-600">personal infos</h3>
-                    </div>
-
-                    {/* Image for mobile view starts*/}
-                    <div className="col-12 d-block d-sm-none">
-                      <Image
-                        src={heroImgMobile}
-                        placeholder="blur"
-                        quality={100}
-                        width={300}
-                        height={300}
-                        className="img-fluid main-img-mobile"
-                        alt="about avatar"
-                      />
-                    </div>
-                    {/* Image for mobile view ends*/}
-
-                    <div className="col-12">
-                      <PersonalInfo />
-                    </div>
-                  </div>
-                  {/* Personal Info ends */}
-
-                  {/* Achievements starts */}
-                  <div className="personal-info-section">
-                    <div className="col-12">
-                      <h3 className="text-uppercase text-center custom-title mb-0 ft-wt-600">Achievements</h3>
-                    </div>
-                    <div className="col-12">
-                      <Achievements />
-                    </div>
-                  </div>
-                  {/* Achievements Ends */}
-                </div>
-                {/* Personal Info & Achievements ends */}
-
-                {/* Skills starts */}
-                <div className="col-lg-6 col-md-12 mt-5 mt-lg-0">
-                  <Skills />
-                </div>
-                {/* Skills ends */}
+              {/* Image for mobile view starts*/}
+              <div className="d-block d-sm-none mb-3">
+                <Image
+                  src={heroImgMobile}
+                  placeholder="blur"
+                  quality={100}
+                  width={300}
+                  height={300}
+                  className="img-fluid main-img-mobile"
+                  alt="about avatar"
+                />
               </div>
-              {/* [Personal Info & Achievements] & Skills ends */}
+              {/* Image for mobile view ends*/}
+
+              {/* Two columns using Grid */}
+              <div className="about-grid">
+                {/* Left Column: Personal Info + Achievements */}
+                <div className="about-grid-column">
+                  <h3 className="text-uppercase text-center custom-title mb-3 ft-wt-600">Personal Infos</h3>
+                  <PersonalInfo />
+                  <Achievements />
+                </div>
+
+                {/* Right Column: Skills */}
+                <div className="about-grid-column">
+                  <h3 className="text-uppercase text-center custom-title mb-3 ft-wt-600">Skills</h3>
+                  
+                  {/* Frontend */}
+                  <div className="box-stats with-margin">
+                    <h3 className="poppins-font position-relative">Frontend</h3>
+                    <div className="skills-list open-sans-font">
+                      {['TypeScript', 'Angular', 'Next.js', 'React.js', 'Tailwind CSS', 'Material UI', 'HTML', 'CSS'].map((skill, index) => (
+                        <span key={index} className="skill-tag">
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Backend */}
+                  <div className="box-stats with-margin">
+                    <h3 className="poppins-font position-relative">Backend</h3>
+                    <div className="skills-list open-sans-font">
+                      {['Java', 'Spring', 'Hibernate', 'JUnit'].map((skill, index) => (
+                        <span key={index} className="skill-tag">
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Database */}
+                  <div className="box-stats with-margin">
+                    <h3 className="poppins-font position-relative">Database</h3>
+                    <div className="skills-list open-sans-font">
+                      {['MySQL', 'PostgreSQL', 'Redis', 'MongoDB', 'Firebase'].map((skill, index) => (
+                        <span key={index} className="skill-tag">
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <ScrollButton targetId="experience-projects-education" />
 
