@@ -27,7 +27,7 @@ html {
 }
 
 :root {
-  --main-primary-color: #008C9F;
+  --main-primary-color: #008c9f;
 }
 
 body {
@@ -174,7 +174,7 @@ button {
   color: #ffffff;
   border-radius: 50%;
   border: none;
-  background-color: #008C9F;
+  background-color: #008c9f;
 }
 
 /*** Page Title ***/
@@ -665,7 +665,7 @@ button {
 }
 
 .about .resume-box .experience-details li::before {
-  content: "▹";
+  content: '▹';
   position: absolute;
   left: 0;
   color: var(--main-primary-color); /* Uses your cyan color */
@@ -679,10 +679,18 @@ button {
 
 /*** Contact ***/
 .contact .main-content {
-  padding-bottom: 85px;
+  padding-bottom: 20px;
 }
 
 /* Left Side */
+
+.contact .main-content {
+  border: none !important;
+}
+
+.contact .container {
+  border: none !important;
+}
 
 .contact .custom-span-contact {
   font-weight: 600;
@@ -716,6 +724,89 @@ button {
   cursor: pointer !important;
 }
 
+/* Centered Contact Info with Flexbox */
+.contact address {
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-style: normal;
+}
+
+.contact .contact-info-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  flex-wrap: nowrap;
+}
+
+@media (max-width: 991px) {
+  .contact .contact-info-flex {
+    flex-direction: column;
+    gap: 40px;
+    border: none !important;
+  }
+  
+  .contact address {
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+}
+
+.contact .contact-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  font-weight: 600;
+}
+
+.contact .contact-item svg {
+  font-size: 40px;
+  color: var(--main-primary-color);
+  flex-shrink: 0;
+}
+
+.contact .contact-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: left;
+}
+
+.contact .contact-item-text span:first-child {
+  text-transform: uppercase;
+  opacity: 0.8;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.contact .contact-item-text a,
+.contact .contact-item-text span:last-child {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.contact .contact-item-text a {
+  transition: color 0.3s ease;
+}
+
+.contact .contact-item-text a:hover {
+  color: var(--main-primary-color);
+}
+
+/* More spacing between mail and social links */
+.contact .mt-5 {
+  margin-top: 4rem !important;
+}
+
 /* Form */
 .contact .contact-form input[type='text'],
 .contact .contact-form input[type='email'] {
@@ -735,12 +826,12 @@ button {
 
 .contact {
   .container {
-    padding-bottom: 60px;
+    padding-bottom: 20px;
   }
 
   @media screen and (min-width: 1920px) {
     .container {
-      padding-bottom: 214px;
+      padding-bottom: 40px;
     }
   }
 
@@ -826,9 +917,12 @@ button {
     text-align: center;
   }
 
-  address {
+  .contact address {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
   }
 }
 
@@ -938,7 +1032,9 @@ button {
     border-radius: 3px;
     z-index: 1;
     transform-origin: 5px 0;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    transition:
+      transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
       opacity 0.55s ease;
   }
 
@@ -1142,10 +1238,21 @@ button {
     margin-top: 35px !important;
   }
 
-  address {
+  .contact address {
     display: flex;
     flex-direction: column;
-    margin-left: 5em;
+    margin-left: 0 !important;
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+  }
+  
+  .contact .main-content {
+    border: none !important;
+  }
+  
+  .contact .container {
+    border: none !important;
   }
 }
 
@@ -1185,6 +1292,10 @@ button {
   animation: anim 0.9s cubic-bezier(0.77, 0, 0.175, 1) both;
   right: 0px;
   bottom: 0px;
+}
+
+.tab-panel_list > div.contact::after {
+  display: none !important;
 }
 
 @keyframes anim {

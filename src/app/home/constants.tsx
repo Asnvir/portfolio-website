@@ -5,7 +5,8 @@ export const heroContent = {
   heroImage: heroImg,
   heroMobileImage: heroImgMobile,
   heroTitleName: 'Artur Kopytin',
-  heroDesignation: 'Software Engineer',
-  heroDescriptions: `I'm focused on innovation and quality experiences. I am passionate about solving problems and delivering value through my work.`,
+  heroDesignation: 'Fullstack Engineer',
+  heroDescriptions: `Fullstack Engineer with 2 years of experience building scalable web applications. Experienced in development lifecycle
+- from feature design and implementation to testing and bug fixes.`,
   heroBtn: 'Download CV',
 };

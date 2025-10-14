@@ -21,13 +21,6 @@ const projectsContent = [
   },
   {
     year: '2023',
-    title: 'Search App',
-    technologies: ['React', 'TypeScript', 'Redux', 'Tailwind CSS'],
-    description: 'A React app using the Rick and Morty API for character and episode searches.',
-    link: '<a target="_blank" href="https://github.com/Asnvir/RickMorty">GitHub repo</a>',
-  },
-  {
-    year: '2023',
     title: 'Money Tracker',
     technologies: ['Java', 'RxJava', 'Firebase', 'Glide'],
     description: 'Intuitive Android app that simplifies expense tracking and organization.',

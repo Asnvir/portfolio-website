@@ -2,8 +2,8 @@ const personalInfoContent = [
   { meta: 'First name', metaInfo: 'Artur' },
   { meta: 'Last name', metaInfo: 'Kopytin' },
   { meta: 'Location', metaInfo: 'Netanya, Israel' },
-  { meta: 'Email', metaInfo: 'artur@kopytin.com' },
-  { meta: 'Phone', metaInfo: '053-332-8460' },
+  { meta: 'Email', metaInfo: process.env.NEXT_PUBLIC_TO_EMAIL_ADDRESS },
+  { meta: 'Phone', metaInfo: process.env.NEXT_PUBLIC_PHONE_NUMBER },
   { meta: 'Languages', metaInfo: 'Hebrew, English, Russian, Ukrainian' },
 ];
 
