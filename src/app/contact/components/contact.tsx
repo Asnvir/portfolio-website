@@ -46,7 +46,6 @@ export default function Contact() {
       });
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
-      console.log(error)
       const errorMessage = `Something went wrong. Please use another form of contact.`;
 
       toast.error(errorMessage);

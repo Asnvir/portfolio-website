@@ -13,7 +13,7 @@ const experienceContent = [
       'Wrote unit and integration tests, ensuring code reliability and reducing production bugs.',
     ],
   },
-    {
+  {
     year: 'Dec 2023 - Dec 2024',
     position: 'Fullstack engineer',
     companyName: '<a target="_blank" href="https://brightdata.com/">Bright Data</a>',
@@ -22,7 +22,7 @@ const experienceContent = [
       'Enhanced backend efficiency by optimizing database queries, reducing API response time by 25%.',
     ],
   },
-    {
+  {
     year: 'Oct 2020 - Nov 2023',
     position: 'Network and Threat Support Specialist',
     companyName: '<a target="_blank" href="https://www.bynet.co.il/">Bynet Data Communications</a>',
@@ -31,7 +31,7 @@ const experienceContent = [
       'Configured LAN/WAN networks on Cisco routers/switches and FortiGate/CheckPoint firewalls.',
       'Configured policies on firewalls to provide secure connections.',
     ],
-  }
+  },
 ];
 
 export default function Experience() {

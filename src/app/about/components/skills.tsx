@@ -2,16 +2,16 @@ export default function Skills() {
   const skillsContent = [
     {
       category: 'Frontend',
-      skills: ['TypeScript', 'Angular', 'Next.js', 'React.js', 'Tailwind CSS', 'Material UI', 'HTML', 'CSS']
+      skills: ['TypeScript', 'Angular', 'Next.js', 'React.js', 'Tailwind CSS', 'Material UI', 'HTML', 'CSS'],
     },
     {
       category: 'Backend',
-      skills: ['Java', 'Spring', 'Hibernate', 'JUnit']
+      skills: ['Java', 'Spring', 'Hibernate', 'JUnit'],
     },
     {
       category: 'Database',
-      skills: ['MySQL', 'PostgreSQL', 'Redis', 'MongoDB', 'Firebase']
-    }
+      skills: ['MySQL', 'PostgreSQL', 'Redis', 'MongoDB', 'Firebase'],
+    },
   ];
 
   return (
