@@ -8,9 +8,10 @@ const experienceContent = [
     position: 'Fullstack engineer',
     companyName: '<a target="_blank" href="https://faddom.com/">Faddom</a>',
     details: [
-      'Developed product features for monitoring platform (data visualization, policy rules, alert notifications).',
-      ' Improved application performance by reducing unnecessary re-renders by 40% through Angular optimization techniques.',
-      'Wrote unit and integration tests, ensuring code reliability and reducing production bugs.',
+      'Utilized Kafka with Spring Kafka in Java Spring Boot applications for asynchronous inter-service communication in microservices architecture, improving system responsiveness and reducing microservice load.',
+      'Containerized microservices with Docker for consistent deployment across environments.',
+      'Optimizated PostgreSQL queries, reducing API response time.',
+      'Improved application performance by reducing unnecessary re-renders through Angular optimization techniques.',
     ],
   },
   {
@@ -18,8 +19,9 @@ const experienceContent = [
     position: 'Fullstack engineer',
     companyName: '<a target="_blank" href="https://brightdata.com/">Bright Data</a>',
     details: [
-      'Developed features for web data collection platform(traffic monitoring, proxy configuration, IP rotation).',
-      'Enhanced backend efficiency by optimizing database queries, reducing API response time by 25%.',
+      'Developed IP rotation microservice using Java, Kafka, and Spring Boot.',
+      'Implemented DAL (Data Access Layer) for MongoDB integration.',
+      'Wrote unit and integration tests, ensuring code reliability and reducing production bugs.',
     ],
   },
   {
