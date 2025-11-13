@@ -6,6 +6,6 @@ export const heroContent = {
   heroMobileImage: heroImgMobile,
   heroTitleName: 'Artur Kopytin',
   heroDesignation: 'Fullstack Engineer',
-  heroDescriptions: `Full Stack Engineer with 2 years of experience developing scalable web applications using Java Spring Boot and microservices architecture. Experienced across the full development lifecycle from design and implementation to testing and deployment.`,
+  heroDescriptions: `Full Stack Engineer with experience developing scalable web applications using Java Spring Boot and microservices architecture. Experienced across the full development lifecycle from design and implementation to testing and deployment.`,
   heroBtn: 'Download CV',
 };
