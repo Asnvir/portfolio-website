@@ -1,7 +1,7 @@
 'use server';
 
 export default async function downloadFile() {
-  const fileName = 'CV_Fullstack_Artur_Kopytin.pdf';
+  const fileName = 'CV_Backend_Artur_Kopytin.pdf';
 
   const githubUsername = process.env.GITHUB_USERNAME;
   const githubRepo = process.env.GITHUB_REPO;
