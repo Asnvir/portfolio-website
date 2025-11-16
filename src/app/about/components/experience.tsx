@@ -5,18 +5,17 @@ import parse from 'html-react-parser';
 const experienceContent = [
   {
     year: 'Dec 2024 - Oct 2025',
-    position: 'Fullstack engineer',
+    position: 'Backend Engineer',
     companyName: '<a target="_blank" href="https://faddom.com/">Faddom</a>',
     details: [
       'Utilized Kafka with Spring Kafka in Java Spring Boot applications for asynchronous inter-service communication in microservices architecture, improving system responsiveness and reducing microservice load.',
       'Containerized microservices with Docker for consistent deployment across environments.',
       'Optimizated PostgreSQL queries, reducing API response time.',
-      'Improved application performance by reducing unnecessary re-renders through Angular optimization techniques.',
     ],
   },
   {
     year: 'Dec 2022 - Dec 2024',
-    position: 'Fullstack engineer',
+    position: 'Backend Engineer',
     companyName: '<a target="_blank" href="https://brightdata.com/">Bright Data</a>',
     details: [
       'Developed IP rotation microservice using Java, Kafka, and Spring Boot.',
