@@ -4,6 +4,12 @@ import parse from 'html-react-parser';
 
 const experienceContent = [
   {
+    year: 'Dec 2025 - Present',
+    position: 'Backend Engineer',
+    companyName: '<a target="_blank" href="https://www.ivory-sw.com/">Ivory Software Systems</a>',
+    details: [],
+  },
+  {
     year: 'Dec 2024 - Oct 2025',
     position: 'Backend Engineer',
     companyName: '<a target="_blank" href="https://faddom.com/">Faddom</a>',
@@ -14,7 +20,7 @@ const experienceContent = [
     ],
   },
   {
-    year: 'Dec 2022 - Dec 2024',
+    year: 'Dec 2023 - Dec 2024',
     position: 'Backend Engineer',
     companyName: '<a target="_blank" href="https://brightdata.com/">Bright Data</a>',
     details: [
