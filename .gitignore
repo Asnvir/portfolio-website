@@ -1,6 +1,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/webstorm,visualstudiocode,nextjs,react
 # Edit at https://www.toptal.com/developers/gitignore?templates=webstorm,visualstudiocode,nextjs,react
 
+
+../../../.serena/
+../../../package-lock.json
+
 ### NextJS ###
 # dependencies
 /node_modules

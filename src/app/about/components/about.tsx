@@ -48,27 +48,6 @@ export default function About() {
                 <div className="about-grid-column">
                   <h3 className="text-uppercase text-center custom-title mb-3 ft-wt-600">Skills</h3>
 
-                  {/* Frontend */}
-                  <div className="box-stats with-margin">
-                    <h3 className="poppins-font position-relative">Frontend</h3>
-                    <div className="skills-list open-sans-font">
-                      {[
-                        'TypeScript',
-                        'Angular',
-                        'Next.js',
-                        'React.js',
-                        'Tailwind CSS',
-                        'Material UI',
-                        'HTML',
-                        'CSS',
-                      ].map((skill, index) => (
-                        <span key={index} className="skill-tag">
-                          {skill}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
                   {/* Backend */}
                   <div className="box-stats with-margin">
                     <h3 className="poppins-font position-relative">Backend</h3>
