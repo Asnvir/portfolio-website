@@ -9,12 +9,6 @@ const educationContent = [
     institute: 'Afeka College of Engineering',
     details: 'Software Developement',
   },
-  {
-    year: '2022-2023',
-    degree: 'Frontend Development',
-    institute: 'Hillel IT School',
-    details: '<a target="_blank" href="https://certificate.ithillel.ua/view/81706976">Source</a>',
-  },
 ];
 
 export default function Education() {
