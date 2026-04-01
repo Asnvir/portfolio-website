@@ -2,11 +2,15 @@ export default function Skills() {
   const skillsContent = [
     {
       category: 'Backend',
-      skills: ['Java', 'Spring', 'Hibernate', 'JUnit'],
+      skills: ['Java', 'Spring', 'Spring Boot', 'Hibernate', 'JUnit', 'Kafka'],
     },
     {
       category: 'Database',
-      skills: ['MySQL', 'PostgreSQL', 'Redis', 'MongoDB', 'Firebase'],
+      skills: ['MySQL', 'PostgreSQL', 'Redis', 'MongoDB'],
+    },
+    {
+      category: 'Other',
+      skills: ['Git', 'Linux', 'Docker'],
     },
   ];
 

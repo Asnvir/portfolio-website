@@ -64,7 +64,19 @@ export default function About() {
                   <div className="box-stats with-margin">
                     <h3 className="poppins-font position-relative">Database</h3>
                     <div className="skills-list open-sans-font">
-                      {['MySQL', 'PostgreSQL', 'Redis', 'MongoDB', 'Firebase'].map((skill, index) => (
+                      {['MySQL', 'PostgreSQL', 'Redis', 'MongoDB'].map((skill, index) => (
+                        <span key={index} className="skill-tag">
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Other */}
+                  <div className="box-stats with-margin">
+                    <h3 className="poppins-font position-relative">Other</h3>
+                    <div className="skills-list open-sans-font">
+                      {['Git', 'Linux', 'Docker'].map((skill, index) => (
                         <span key={index} className="skill-tag">
                           {skill}
                         </span>

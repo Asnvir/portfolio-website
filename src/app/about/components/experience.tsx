@@ -7,10 +7,12 @@ const experienceContent = [
     year: 'Dec 2025 - Present',
     position: 'Backend Engineer',
     companyName: '<a target="_blank" href="https://www.ivory-sw.com/">Ivory Software Systems</a>',
-    details: [],
+    details: [
+      'Reduced search latency by 36x — from 5s to 136ms — across 120,000,000+ record comparisons by architecting a caching solution with runtime-composable filtering logic using Specification, Builder and Factory patterns in Java.',
+    ],
   },
   {
-    year: 'Dec 2024 - Oct 2025',
+    year: 'Dec 2023 - Dec 2025',
     position: 'Backend Engineer',
     companyName: '<a target="_blank" href="https://faddom.com/">Faddom</a>',
     details: [
@@ -20,7 +22,7 @@ const experienceContent = [
     ],
   },
   {
-    year: 'Dec 2023 - Dec 2024',
+    year: 'Dec 2022 - Dec 2023',
     position: 'Backend Engineer',
     companyName: '<a target="_blank" href="https://brightdata.com/">Bright Data</a>',
     details: [
@@ -29,16 +31,16 @@ const experienceContent = [
       'Wrote unit and integration tests, ensuring code reliability and reducing production bugs.',
     ],
   },
-  {
-    year: 'Oct 2020 - Nov 2022',
-    position: 'Network and Threat Support Specialist',
-    companyName: '<a target="_blank" href="https://www.bynet.co.il/">Bynet Data Communications</a>',
-    details: [
-      'Detected and resolved network issues—from router misconfigurations to protocol failures (BGP, OSPF).',
-      'Configured LAN/WAN networks on Cisco routers/switches and FortiGate/CheckPoint firewalls.',
-      'Configured policies on firewalls to provide secure connections.',
-    ],
-  },
+  // {
+  //   year: 'Oct 2020 - Nov 2022',
+  //   position: 'Network and Threat Support Specialist',
+  //   companyName: '<a target="_blank" href="https://www.bynet.co.il/">Bynet Data Communications</a>',
+  //   details: [
+  //     'Detected and resolved network issues—from router misconfigurations to protocol failures (BGP, OSPF).',
+  //     'Configured LAN/WAN networks on Cisco routers/switches and FortiGate/CheckPoint firewalls.',
+  //     'Configured policies on firewalls to provide secure connections.',
+  //   ],
+  // },
 ];
 
 export default function Experience() {

@@ -6,6 +6,7 @@ export const heroContent = {
   heroMobileImage: heroImgMobile,
   heroTitleName: 'Artur Kopytin',
   heroDesignation: 'Backend Engineer',
-  heroDescriptions: `Backend Engineer with experience developing scalable web applications using Java Spring Boot and microservices architecture. Experienced across the full development lifecycle from design and implementation to testing and deployment.`,
+  heroDescriptions:
+    'Backend Engineer with 3+ years of software development experience in the fintech domain, specializing in high-performance, multithreaded systems built to handle large-scale datasets under production pressure.',
   heroBtn: 'Download CV',
 };
